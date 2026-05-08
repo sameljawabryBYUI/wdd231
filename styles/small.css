@@ -65,6 +65,7 @@ header span {
 /* Navigation */
 nav {
     background-color: #001f3f;
+    color: var(--text-light); /* Add this line to pass the contrast check */
 }
 
 .navigation {
