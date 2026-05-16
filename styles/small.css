@@ -186,3 +186,11 @@ footer {
     padding: 1.5rem;
     margin-top: 2rem;
 }
+
+/* Student Photo Styling */
+.profile-photo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
