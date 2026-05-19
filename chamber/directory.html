@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Business directory for the Paris Chamber of Commerce. Explore local businesses, services, and networking opportunities in Paris, France.">
+    <meta name="author" content="Marie Martínez"> <title>Business Directory | Paris Chamber of Commerce</title>
+    
+    <meta property="og:title" content="Paris Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://your-github-username.github.io/wdd231/chamber/images/social-preview.webp"> <meta property="og:url" content="https://your-github-username.github.io/wdd231/chamber/directory.html"> <meta property="og:description" content="Discover and connect with top local businesses in the Paris area.">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/directory.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/chamber-logo.webp" alt="Paris Chamber Logo" id="logo" width="80" height="80">
+            <div>
+                <h1>Paris</h1>
+                <h2>Chamber of Commerce</h2>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html" class="active">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+        <div class="view-controls">
+            <button id="grid-btn" class="active" aria-label="Grid View">⏹️ Grid</button>
+            <button id="list-btn" aria-label="List View">🀄 List</button>
+        </div>
+        
+        <div id="directory-container" class="grid-view"></div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h3>Paris Chamber of Commerce</h3>
+            <p>100 Rue de Rivoli</p>
+            <p>75001 Paris, France</p>
+            <p>info@parischamber.fr</p>
+            <p>+33 1 23 45 67 89</p>
+        </div>
+        <div class="footer-social">
+            <a href="#">YouTube</a> | <a href="#">Twitter</a> | <a href="#">LinkedIn</a>
+        </div>
+        <div class="footer-legal">
+            <p>WDD231 Class Project | <span id="student-name">Samar Abbas</span></p>
+            <p>&copy; <span id="currentyear"></span> Paris Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>

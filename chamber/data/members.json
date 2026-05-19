@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Seine Web Solutions",
+    "address": "15 Rue du Louvre, 75001 Paris",
+    "phone": "+33 1 23 45 67 89",
+    "website": "https://www.seineweb.example.com",
+    "image": "seine-web.webp",
+    "membershipLevel": 3,
+    "description": "Responsive web frontend development and SEO."
+  },
+  {
+    "name": "Atelier Haute Couture",
+    "address": "45 Avenue Montaigne, 75008 Paris",
+    "phone": "+33 1 98 76 54 32",
+    "website": "https://www.ateliercouture.example.com",
+    "image": "atelier.webp",
+    "membershipLevel": 2,
+    "description": "Custom high-end fashion and gown construction."
+  },
+  {
+    "name": "Montmartre Code Academy",
+    "address": "12 Rue Lepic, 75018 Paris",
+    "phone": "+33 1 11 22 33 44",
+    "website": "https://www.montmartrecode.example.com",
+    "image": "code-academy.webp",
+    "membershipLevel": 1,
+    "description": "Professional tutoring and software engineering courses."
+  },
+  {
+    "name": "Aéro Équipement Paris",
+    "address": "La Défense, 92400 Courbevoie, Paris",
+    "phone": "+33 1 55 66 77 88",
+    "website": "https://www.aeroequip.example.com",
+    "image": "aero-equip.webp",
+    "membershipLevel": 2,
+    "description": "Professional equipment and apparel for commercial pilots."
+  },
+  {
+    "name": "Lumière City Tours",
+    "address": "10 Place de la Concorde, 75008 Paris",
+    "phone": "+33 1 99 88 77 66",
+    "website": "https://www.lumieretours.example.com",
+    "image": "lumiere-tours.webp",
+    "membershipLevel": 1,
+    "description": "Luxury European coastal vacation and city planning."
+  },
+  {
+    "name": "Boulangerie Rive Gauche",
+    "address": "84 Boulevard Saint-Germain, 75005 Paris",
+    "phone": "+33 1 44 55 66 77",
+    "website": "https://www.rivegauchepain.example.com",
+    "image": "boulangerie.webp",
+    "membershipLevel": 2,
+    "description": "Authentic Parisian pastries and catering services."
+  },
+  {
+    "name": "Jardins de Versailles Aménagement",
+    "address": "22 Rue de Rivoli, 75004 Paris",
+    "phone": "+33 1 33 44 55 66",
+    "website": "https://www.jardinsamenagement.example.com",
+    "image": "jardins.webp",
+    "membershipLevel": 3,
+    "description": "Premium residential and commercial landscaping."
+  }
+]
