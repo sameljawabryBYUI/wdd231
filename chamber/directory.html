@@ -15,6 +15,10 @@
 
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     
@@ -25,8 +29,8 @@
         <div class="header-content">
             <img src="images/chamber-logo.webp" alt="Paris Chamber Logo" id="logo" width="80" height="80">
             <div>
-                <h1>Paris</h1>
-                <h2>Chamber of Commerce</h2>
+                <span class="header-title">Paris</span>
+                <span class="header-subtitle">Chamber of Commerce</span>
             </div>
         </div>
         <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
@@ -41,7 +45,8 @@
     </header>
 
     <main>
-        <h2>Business Directory</h2>
+        <h1>Business Directory</h1>
+        
         <div class="view-controls">
             <button id="grid-btn" class="active" aria-label="Grid View">⏹️ Grid</button>
             <button id="list-btn" aria-label="List View">🀄 List</button>
@@ -64,7 +69,7 @@
             <a href="https://www.linkedin.com" target="_blank" aria-label="Paris Chamber LinkedIn">LinkedIn</a>
         </div>
         <div class="footer-legal">
-            <p>WDD231 Class Project | <span id="student-name">Samar Abbas</span></p>
+            <p>WDD231 Class Project | <span id="student-name">Sam</span></p>
             <p>&copy; <span id="currentyear"></span> Paris Chamber of Commerce</p>
             <p>Last Modification: <span id="lastModified"></span></p>
         </div>
