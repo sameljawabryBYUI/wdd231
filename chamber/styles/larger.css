@@ -42,4 +42,20 @@
     .footer-social {
         margin: 0;
     }
+
+    /* --- Chamber Home Page Layout Extensions (Desktop Layout) --- */
+    
+    /* Elements layout: 3 columns matching desktop layout wireframe */
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    /* Three spotlights displaying completely side-by-side */
+    .spotlights-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
 }

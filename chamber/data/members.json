@@ -1,65 +1,65 @@
 [
   {
-    "name": "Seine Web Solutions",
-    "address": "15 Rue du Louvre, 75001 Paris",
-    "phone": "+33 1 23 45 67 89",
-    "website": "https://www.seineweb.example.com",
-    "image": "seine-web.webp",
-    "membershipLevel": 3,
-    "description": "Responsive web frontend development and SEO."
+    "name": "Boulangerie Rive Gauche",
+    "address": "15 Rue de la Boulangerie, 75001 Paris",
+    "phone": "+33 1 44 55 66 77",
+    "website": "https://boulangerierivegauche.fr",
+    "image": "images/boulangerie.webp",
+    "membershipLevel": "Silver",
+    "email": "contact@boulangerierivegauche.fr"
   },
   {
     "name": "Atelier Haute Couture",
-    "address": "45 Avenue Montaigne, 75008 Paris",
+    "address": "22 Avenue Montaigne, 75008 Paris",
     "phone": "+33 1 98 76 54 32",
-    "website": "https://www.ateliercouture.example.com",
-    "image": "atelier.webp",
-    "membershipLevel": 2,
-    "description": "Custom high-end fashion and gown construction."
+    "website": "https://atelierhautecouture.fr",
+    "image": "images/atelier.webp",
+    "membershipLevel": "Silver",
+    "email": "style@atelierhautecouture.fr"
+  },
+  {
+    "name": "Seine Web Solutions",
+    "address": "5 Rue de la Tech, 75002 Paris",
+    "phone": "+33 1 23 45 67 89",
+    "website": "https://seinewebsolutions.fr",
+    "image": "images/seine-web.webp",
+    "membershipLevel": "Gold",
+    "email": "hello@seinewebsolutions.fr"
+  },
+  {
+    "name": "Jardins de Versailles Aménagement",
+    "address": "10 Avenue de Versailles, 75016 Paris",
+    "phone": "+33 1 33 44 55 66",
+    "website": "https://jardinsversailles.fr",
+    "image": "images/jardins.webp",
+    "membershipLevel": "Gold",
+    "email": "info@jardinsversailles.fr"
+  },
+  {
+    "name": "Aéro Équipement Paris",
+    "address": "8 Boulevard de l'Aviation, 75015 Paris",
+    "phone": "+33 1 55 66 77 88",
+    "website": "https://aeroequipement.fr",
+    "image": "images/aero-equip.webp",
+    "membershipLevel": "Silver",
+    "email": "contact@aeroequipement.fr"
   },
   {
     "name": "Montmartre Code Academy",
     "address": "12 Rue Lepic, 75018 Paris",
     "phone": "+33 1 11 22 33 44",
     "website": "https://www.montmartrecode.example.com",
-    "image": "code-academy.webp",
-    "membershipLevel": 1,
-    "description": "Professional tutoring and software engineering courses."
-  },
-  {
-    "name": "Aéro Équipement Paris",
-    "address": "La Défense, 92400 Courbevoie, Paris",
-    "phone": "+33 1 55 66 77 88",
-    "website": "https://www.aeroequip.example.com",
-    "image": "aero-equip.webp",
-    "membershipLevel": 2,
-    "description": "Professional equipment and apparel for commercial pilots."
+    "image": "images/code-academy.webp",
+    "membershipLevel": "Gold",
+    "email": "learn@montmartrecode.example.com"
   },
   {
     "name": "Lumière City Tours",
     "address": "10 Place de la Concorde, 75008 Paris",
     "phone": "+33 1 99 88 77 66",
     "website": "https://www.lumieretours.example.com",
-    "image": "lumiere-tours.webp",
-    "membershipLevel": 1,
-    "description": "Luxury European coastal vacation and city planning."
-  },
-  {
-    "name": "Boulangerie Rive Gauche",
-    "address": "84 Boulevard Saint-Germain, 75005 Paris",
-    "phone": "+33 1 44 55 66 77",
-    "website": "https://www.rivegauchepain.example.com",
-    "image": "boulangerie.webp",
-    "membershipLevel": 2,
-    "description": "Authentic Parisian pastries and catering services."
-  },
-  {
-    "name": "Jardins de Versailles Aménagement",
-    "address": "22 Rue de Rivoli, 75004 Paris",
-    "phone": "+33 1 33 44 55 66",
-    "website": "https://www.jardinsamenagement.example.com",
-    "image": "jardins.webp",
-    "membershipLevel": 3,
-    "description": "Premium residential and commercial landscaping."
+    "image": "images/lumiere-tours.webp",
+    "membershipLevel": "Silver",
+    "email": "book@lumieretours.example.com"
   }
 ]

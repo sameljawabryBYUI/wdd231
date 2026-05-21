@@ -50,14 +50,13 @@ function displayMembers(members) {
         website.setAttribute('href', member.website);
         website.setAttribute('target', '_blank');
         
-        // LIGHTHOUSE FIX 1: Gives screen readers a unique name for each link
         website.setAttribute('aria-label', `Visit the ${member.name} website`);
 
-        logo.setAttribute('src', `images/${member.image}`);
+        // FIX: Pointing directly to the path provided in your JSON
+        logo.setAttribute('src', member.image); 
         logo.setAttribute('alt', `Logo of ${member.name}`);
         logo.setAttribute('loading', 'lazy');
         
-        // LIGHTHOUSE FIX 2: Explicit width and height stops the page from shifting
         logo.setAttribute('width', '250'); 
         logo.setAttribute('height', '200'); 
         
@@ -81,7 +80,6 @@ gridBtn.addEventListener('click', () => {
     directoryContainer.classList.add('grid-view');
     directoryContainer.classList.remove('list-view');
     
-    // Toggle active state on buttons
     gridBtn.classList.add('active');
     listBtn.classList.remove('active');
 });
@@ -90,7 +88,6 @@ listBtn.addEventListener('click', () => {
     directoryContainer.classList.add('list-view');
     directoryContainer.classList.remove('grid-view');
     
-    // Toggle active state on buttons
     listBtn.classList.add('active');
     gridBtn.classList.remove('active');
 });

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Home page for the Paris Chamber of Commerce. Discover local events, weather, and our premier business members.">
+    <meta name="author" content="Samar Abbas">
+    <title>Home | Paris Chamber of Commerce</title>
+    
+    <meta property="og:title" content="Paris Chamber of Commerce Home">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sameljawabrybyui.github.io/wdd231/chamber/images/chamber-logo.webp"> 
+    <meta property="og:url" content="https://sameljawabrybyui.github.io/wdd231/chamber/index.html"> 
+    <meta property="og:description" content="Join the Paris Chamber of Commerce to connect, discover events, and grow your local business.">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    
+    <script src="scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <img src="images/chamber-logo.webp" alt="Paris Chamber Logo" id="logo" width="80" height="80">
+            <div>
+                <span class="header-title">Paris</span>
+                <span class="header-subtitle">Chamber of Commerce</span>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.webp" media="(min-width: 768px)">
+                <img src="images/hero-small.webp" alt="Beautiful view of the Seine river and Eiffel Tower in Paris" width="800" height="400">
+            </picture>
+            <a href="join.html" class="cta-button">Join the Chamber</a>
+        </div>
+
+        <div class="home-grid">
+            <section class="card events">
+                <h2>Current Events</h2>
+                <ul class="event-list">
+                    <li><strong>Annual Gala:</strong> October 15th, 7:00 PM</li>
+                    <li><strong>Networking Breakfast:</strong> November 2nd, 8:00 AM</li>
+                    <li><strong>Small Business Workshop:</strong> November 18th, 2:00 PM</li>
+                </ul>
+            </section>
+
+            <section class="card weather">
+                <h2>Current Weather</h2>
+                <div id="current-weather">
+                    </div>
+            </section>
+
+            <section class="card forecast">
+                <h2>Weather Forecast</h2>
+                <div id="weather-forecast">
+                    </div>
+            </section>
+        </div>
+
+        <div class="spotlight-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlights-container" class="spotlights-grid">
+                </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <h2>Paris Chamber of Commerce</h2>
+            <p>100 Rue de Rivoli</p>
+            <p>75001 Paris, France</p>
+            <p>info@parischamber.fr</p>
+            <p>+33 1 23 45 67 89</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.youtube.com" target="_blank" aria-label="Paris Chamber YouTube">YouTube</a> | 
+            <a href="https://www.twitter.com" target="_blank" aria-label="Paris Chamber Twitter">Twitter</a> | 
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Paris Chamber LinkedIn">LinkedIn</a>
+        </div>
+        <div class="footer-legal">
+            <p>WDD231 Class Project | <span id="student-name">Samar Abbas</span></p>
+            <p>&copy; <span id="currentyear"></span> Paris Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+</body>
+</html>
