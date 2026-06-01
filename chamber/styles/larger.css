@@ -58,4 +58,20 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 1.5rem;
     }
+
+    /* ========================================= */
+    /* --- W04 JOIN PAGE (Desktop Layout) --- */
+    /* ========================================= */
+    
+    .join-main {
+        flex-direction: row; 
+    }
+    
+    .form-container {
+        flex: 2; 
+    }
+    
+    .membership-cards {
+        flex: 1; 
+    }
 }

@@ -1,0 +1,143 @@
+/* ---- FORM STYLING ---- */
+.join-form label {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+/* Enhancing active focus states for accessibility */
+.join-form input:focus, 
+.join-form textarea:focus {
+    outline: 2px solid #0056b3;
+    border-color: #0056b3;
+}
+
+.membership-levels {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+.membership-levels label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.submit-btn {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* ---- MODAL STYLING ---- */
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.6);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* ---- MOBILE FIRST LAYOUT ---- */
+.join-main {
+    display: flex;
+    flex-direction: column; /* Stacks the form and cards vertically on mobile */
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ---- INITIAL LOAD ANIMATION ---- */
+.card {
+    background: #f4f4f4;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.card:nth-child(2) { animation-delay: 0.1s; }
+.card:nth-child(3) { animation-delay: 0.3s; }
+.card:nth-child(4) { animation-delay: 0.5s; }
+.card:nth-child(5) { animation-delay: 0.7s; }
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* ========================================= */
+/* --- THANK YOU PAGE STYLING --- */
+/* ========================================= */
+
+.thankyou-main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+    font-family: Arial, sans-serif; /* Adjust to match your site's font */
+}
+
+.thankyou-main h1 {
+    color: #0056b3; /* Adjust to match your Chamber primary color */
+    margin-bottom: 1rem;
+}
+
+.results-box {
+    background-color: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.results-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+}

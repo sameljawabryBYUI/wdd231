@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Thank You - Chamber of Commerce</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+    <header>
+        <!-- Your header here -->
+    </header>
+
+    <main class="thankyou-main">
+        <h1>Thank You for Your Application!</h1>
+        <p>Your application has been received. Here are the details you submitted:</p>
+        
+        <div id="submission-results" class="results-box">
+            <!-- Data will be injected here via JavaScript -->
+        </div>
+    </main>
+
+    <footer>
+        <!-- Your footer here -->
+    </footer>
+
+    <script>
+        // Extract URL parameters
+        const urlParams = new URLSearchParams(window.location.search);
+        
+        // Target the results container
+        const resultsContainer = document.getElementById('submission-results');
+
+        // Format the timestamp for readability
+        let formattedDate = "N/A";
+        const timestamp = urlParams.get('timestamp');
+        if (timestamp) {
+            const dateObj = new Date(timestamp);
+            formattedDate = dateObj.toLocaleString(); 
+        }
+
+        // Inject the required fields into the DOM
+        resultsContainer.innerHTML = `
+            <p><strong>First Name:</strong> ${urlParams.get('first-name') || 'N/A'}</p>
+            <p><strong>Last Name:</strong> ${urlParams.get('last-name') || 'N/A'}</p>
+            <p><strong>Email Address:</strong> <a href="mailto:${urlParams.get('email')}">${urlParams.get('email') || 'N/A'}</a></p>
+            <p><strong>Mobile Phone:</strong> ${urlParams.get('phone') || 'N/A'}</p>
+            <p><strong>Business/Organization Name:</strong> ${urlParams.get('organization') || 'N/A'}</p>
+            <p><strong>Application Date & Time:</strong> ${formattedDate}</p>
+        `;
+    </script>
+</body>
+</html>
