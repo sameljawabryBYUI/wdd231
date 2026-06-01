@@ -363,3 +363,159 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+/* ========================================= */
+/* --- W04 JOIN & THANK YOU PAGE STYLING --- */
+/* ========================================= */
+
+.join-form label {
+    display: block;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+}
+
+.join-form input[type="text"],
+.join-form input[type="email"],
+.join-form input[type="tel"],
+.join-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-family: var(--font-base);
+}
+
+.join-form input:focus, 
+.join-form textarea:focus {
+    outline: 2px solid var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.membership-levels {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+}
+
+.membership-levels label {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+.submit-btn {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s, transform 0.2s;
+    font-weight: bold;
+}
+
+.submit-btn:hover {
+    background-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.modal-btn {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.modal-btn:hover {
+    background-color: var(--accent-color);
+}
+
+dialog {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin: auto;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.6);
+}
+
+.close-modal {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+.close-modal:hover {
+    background-color: #555;
+}
+
+.join-main {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.card.fade-in {
+    opacity: 0;
+    animation: slideUpFade 0.8s ease-out forwards;
+}
+
+.membership-cards .card:nth-child(2) { animation-delay: 0.1s; }
+.membership-cards .card:nth-child(3) { animation-delay: 0.3s; }
+.membership-cards .card:nth-child(4) { animation-delay: 0.5s; }
+.membership-cards .card:nth-child(5) { animation-delay: 0.7s; }
+
+@keyframes slideUpFade {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Thank You Page Styling */
+.thankyou-main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+.thankyou-main h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.results-box {
+    background-color: var(--secondary-color);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+.results-box p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+    color: var(--text-dark);
+}

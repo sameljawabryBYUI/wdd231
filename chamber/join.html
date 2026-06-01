@@ -1,25 +1,45 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Join the Chamber of Commerce</title>
-    <meta name="description" content="Chamber of Commerce membership application form.">
-    <meta name="author" content="Samar El Jawabry">
-    <!-- Remember to link your normalize and custom CSS files here -->
-    <link rel="stylesheet" href="styles/base.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Join the Paris Chamber of Commerce. Apply for a membership today.">
+    <meta name="author" content="Samar Abbas">
+    <title>Join | Paris Chamber of Commerce</title>
+    
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
+    
     <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
-        <!-- Your existing header and nav go here -->
+        <div class="header-content">
+            <img src="images/chamber-logo.webp" alt="Paris Chamber Logo" id="logo" width="80" height="80">
+            <div>
+                <span class="header-title">Paris</span>
+                <span class="header-subtitle">Chamber of Commerce</span>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle navigation">&#9776;</button>
+        <nav id="primary-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+            </ul>
+        </nav>
     </header>
 
     <main class="join-main">
         <section class="form-container">
             <h1>Membership Application Form</h1>
-            <!-- Action points to thankyou.html, method is GET -->
             <form method="get" action="thankyou.html" class="join-form">
                 
                 <label>First Name *
@@ -30,12 +50,10 @@
                     <input type="text" name="last-name" title="Enter your last name" autocomplete="family-name" required>
                 </label>
                 
-                <!-- Pattern: Alpha, hyphens, spaces, min 7 chars -->
                 <label>Organizational Title
                     <input type="text" name="org-title" title="Title must contain at least 7 characters (letters, hyphens, or spaces only)." autocomplete="organization-title" pattern="[A-Za-z\-\s]{7,}">
                 </label>
                 
-                <!-- Email with placeholder -->
                 <label>Email Address *
                     <input type="email" name="email" title="Enter a valid email address" autocomplete="email" placeholder="example@domain.com" required>
                 </label>
@@ -48,7 +66,6 @@
                     <input type="text" name="organization" title="Enter your business or organization name" autocomplete="organization" required>
                 </label>
 
-                <!-- Membership Level Selection -->
                 <fieldset class="membership-levels">
                     <legend>Select a Membership Level *</legend>
                     <label><input type="radio" name="membership" value="np" required> Non Profit Membership Level</label>
@@ -61,14 +78,12 @@
                     <textarea name="description" title="Provide a brief description of your organization"></textarea>
                 </label>
 
-                <!-- Hidden timestamp field -->
                 <input type="hidden" name="timestamp" id="timestamp">
 
                 <button type="submit" class="submit-btn">Apply for Membership</button>
             </form>
         </section>
 
-        <!-- Membership Cards -->
         <section class="membership-cards">
             <h2>Membership Levels</h2>
             
@@ -90,7 +105,6 @@
             </div>
         </section>
 
-        <!-- HTML Dialog Modals for Membership Benefits -->
         <dialog id="modal-np">
             <h3>Non Profit Membership</h3>
             <p>Designed for non-profit organizations. Includes basic networking access and a standard directory listing.</p>
@@ -119,7 +133,23 @@
     </main>
 
     <footer>
-        <!-- Your existing footer goes here -->
+        <div class="footer-info">
+            <h2>Paris Chamber of Commerce</h2>
+            <p>100 Rue de Rivoli</p>
+            <p>75001 Paris, France</p>
+            <p>info@parischamber.fr</p>
+            <p>+33 1 23 45 67 89</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.youtube.com" target="_blank" aria-label="Paris Chamber YouTube">YouTube</a> | 
+            <a href="https://www.twitter.com" target="_blank" aria-label="Paris Chamber Twitter">Twitter</a> | 
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Paris Chamber LinkedIn">LinkedIn</a>
+        </div>
+        <div class="footer-legal">
+            <p>WDD231 Class Project | <span id="student-name">Samar Abbas</span></p>
+            <p>&copy; <span id="currentyear"></span> Paris Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
 </html>
