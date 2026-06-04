@@ -15,13 +15,13 @@
     <style>
         /* ==========================================
            COLOR SCHEME & TYPOGRAPHY VARIABLES
-           (Dior / Egyptian Fusion)
+           (Dior / Egyptian Fusion - ACCESSIBILITY UPDATED)
            ========================================== */
         :root {
             --alabaster: #FAF9F6;      /* Pristine, warm white for background */
             --obsidian: #111111;       /* Stark, editorial black for main text & structure */
-            --montaigne-grey: #8A8B8F; /* Signature Dior grey for secondary text/borders */
-            --luxor-gold: #C5A059;     /* Deep Egyptian gold for delicate accents */
+            --montaigne-grey: #595A5E; /* DEEPENED Dior grey to pass contrast standards */
+            --luxor-gold: #8B6D28;     /* DEEPENED antique gold to pass contrast standards */
             
             --font-editorial: 'Bodoni Moda', serif;
             --font-modern: 'Jost', sans-serif;
@@ -44,7 +44,7 @@
             line-height: 1.7;
             margin: 0;
             padding: 0;
-            text-align: center; /* Centered alignment for high-fashion feel */
+            text-align: center;
         }
 
         .container {
@@ -76,7 +76,7 @@
             display: inline-block;
         }
 
-        /* Delicate Gold Accent Line (Repetition & Alignment) */
+        /* Delicate Gold Accent Line */
         h2::after {
             content: '';
             display: block;
@@ -115,6 +115,7 @@
             letter-spacing: 0.3em;
             font-size: 0.85rem;
             color: var(--montaigne-grey);
+            font-weight: 400;
         }
 
         .highlight {
@@ -122,6 +123,7 @@
             font-family: var(--font-editorial);
             font-style: italic;
             font-size: 1.1em;
+            font-weight: 600;
         }
 
         ul {
@@ -159,7 +161,7 @@
             margin-bottom: 1rem;
         }
 
-        .swatch.c1 { background-color: var(--alabaster); border: 1px solid #e0e0e0; }
+        .swatch.c1 { background-color: var(--alabaster); border: 1px solid #c4c4c4; }
         .swatch.c2 { background-color: var(--obsidian); }
         .swatch.c3 { background-color: var(--montaigne-grey); border: none; }
         .swatch.c4 { background-color: var(--luxor-gold); border: none; }
@@ -169,13 +171,15 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             color: var(--obsidian);
+            font-weight: 500;
         }
 
         .swatch-info span {
             display: block;
             color: var(--montaigne-grey);
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             margin-top: 0.3rem;
+            font-weight: 400;
         }
 
         /* ==========================================
@@ -200,6 +204,7 @@
             font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
+            font-weight: 500;
         }
         
         .wireframe-box h3 {
@@ -224,7 +229,7 @@
         .wf-desktop { width: 500px; height: 500px; }
 
         .wf-nav { height: 40px; border-top: none; border-left: none; border-right: none; }
-        .wf-hero { height: 180px; font-family: var(--font-editorial); font-style: italic; background-color: #f5f5f5; }
+        .wf-hero { height: 180px; font-family: var(--font-editorial); font-style: italic; background-color: #f5f5f5; color: var(--obsidian); }
         
         /* Simulating the JSON data grid */
         .wf-json-grid { 
@@ -251,6 +256,7 @@
             text-transform: uppercase;
             letter-spacing: 0.2em;
             color: var(--obsidian);
+            font-weight: 500;
         }
     </style>
 </head>
@@ -306,11 +312,11 @@
                 </div>
                 <div class="swatch-wrap">
                     <div class="swatch c3"></div>
-                    <div class="swatch-info">Montaigne Grey<span>#8A8B8F • Borders</span></div>
+                    <div class="swatch-info">Montaigne Grey<span>#595A5E • Borders</span></div>
                 </div>
                 <div class="swatch-wrap">
                     <div class="swatch c4"></div>
-                    <div class="swatch-info">Luxor Gold<span>#C5A059 • Accents</span></div>
+                    <div class="swatch-info">Luxor Gold<span>#8B6D28 • Accents</span></div>
                 </div>
             </div>
         </section>
