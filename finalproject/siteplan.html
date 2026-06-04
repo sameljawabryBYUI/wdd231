@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Plan - Maison Kemet Couture</title>
+    <meta name="description" content="Individual Project Site Plan for WDD 231, defining a Dior-inspired aesthetic for bespoke Egyptian-French fashion.">
+    <meta name="author" content="Samar">
+    
+    <!-- High-Fashion Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+    
+    <style>
+        /* ==========================================
+           COLOR SCHEME & TYPOGRAPHY VARIABLES
+           (Dior / Egyptian Fusion)
+           ========================================== */
+        :root {
+            --alabaster: #FAF9F6;      /* Pristine, warm white for background */
+            --obsidian: #111111;       /* Stark, editorial black for main text & structure */
+            --montaigne-grey: #8A8B8F; /* Signature Dior grey for secondary text/borders */
+            --luxor-gold: #C5A059;     /* Deep Egyptian gold for delicate accents */
+            
+            --font-editorial: 'Bodoni Moda', serif;
+            --font-modern: 'Jost', sans-serif;
+            
+            --spacing-sm: 1rem;
+            --spacing-md: 2.5rem;
+            --spacing-lg: 5rem;
+        }
+
+        /* ==========================================
+           MODERN EDITORIAL BASE STYLES
+           ========================================== */
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: var(--font-modern);
+            background-color: var(--alabaster);
+            color: var(--obsidian);
+            font-weight: 300;
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Centered alignment for high-fashion feel */
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+            padding: var(--spacing-md) var(--spacing-sm);
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: var(--font-editorial);
+            font-weight: 400;
+            color: var(--obsidian);
+            text-transform: uppercase;
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+        }
+
+        h2 {
+            font-size: clamp(1.5rem, 4vw, 2rem);
+            letter-spacing: 0.15em;
+            margin-top: var(--spacing-lg);
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            display: inline-block;
+        }
+
+        /* Delicate Gold Accent Line (Repetition & Alignment) */
+        h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 1px;
+            background-color: var(--luxor-gold);
+            margin: 1rem auto 0;
+        }
+
+        p {
+            font-size: 1.05rem;
+            color: var(--obsidian);
+            margin-bottom: 1.5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        strong {
+            font-weight: 500;
+            letter-spacing: 0.05em;
+        }
+
+        /* ==========================================
+           LAYOUT COMPONENTS
+           ========================================== */
+        header {
+            padding: var(--spacing-lg) 0;
+            border-bottom: 1px solid var(--montaigne-grey);
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .subtitle {
+            font-family: var(--font-modern);
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+            font-size: 0.85rem;
+            color: var(--montaigne-grey);
+        }
+
+        .highlight {
+            color: var(--luxor-gold);
+            font-family: var(--font-editorial);
+            font-style: italic;
+            font-size: 1.1em;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 1.2rem;
+            font-size: 1.05rem;
+        }
+
+        /* ==========================================
+           COLOR PALETTE DISPLAY
+           ========================================== */
+        .palette {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .swatch-wrap {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 140px;
+        }
+
+        .swatch {
+            width: 100px;
+            height: 140px;
+            border: 1px solid var(--montaigne-grey);
+            margin-bottom: 1rem;
+        }
+
+        .swatch.c1 { background-color: var(--alabaster); border: 1px solid #e0e0e0; }
+        .swatch.c2 { background-color: var(--obsidian); }
+        .swatch.c3 { background-color: var(--montaigne-grey); border: none; }
+        .swatch.c4 { background-color: var(--luxor-gold); border: none; }
+
+        .swatch-info {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--obsidian);
+        }
+
+        .swatch-info span {
+            display: block;
+            color: var(--montaigne-grey);
+            font-size: 0.7rem;
+            margin-top: 0.3rem;
+        }
+
+        /* ==========================================
+           EDITORIAL WIREFRAMES
+           ========================================== */
+        .wireframes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .wireframe-box {
+            border: 1px solid var(--obsidian);
+            background-color: var(--alabaster);
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: var(--montaigne-grey);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+        
+        .wireframe-box h3 {
+            margin: 0 0 1rem 0;
+            color: var(--obsidian);
+            font-family: var(--font-modern);
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+
+        .wf-element {
+            width: 100%;
+            border: 1px solid var(--montaigne-grey);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.5rem;
+            background-color: #fff;
+        }
+        
+        .wf-mobile { width: 300px; height: 500px; }
+        .wf-desktop { width: 500px; height: 500px; }
+
+        .wf-nav { height: 40px; border-top: none; border-left: none; border-right: none; }
+        .wf-hero { height: 180px; font-family: var(--font-editorial); font-style: italic; background-color: #f5f5f5; }
+        
+        /* Simulating the JSON data grid */
+        .wf-json-grid { 
+            display: grid; 
+            grid-template-columns: 1fr 1fr; 
+            gap: 10px; 
+            width: 100%; 
+            padding: 10px 0; 
+            flex-grow: 1;
+        }
+        .wf-mobile .wf-json-grid { grid-template-columns: 1fr; }
+        .wf-json-card { height: 80px; border: 1px solid var(--montaigne-grey); display: flex; align-items: center; justify-content: center;}
+        
+        .wf-footer { height: 40px; margin-bottom: 0; }
+
+        /* ==========================================
+           FOOTER
+           ========================================== */
+        footer {
+            margin-top: var(--spacing-lg);
+            padding: var(--spacing-md) 0;
+            border-top: 1px solid var(--montaigne-grey);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: var(--obsidian);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <span class="subtitle">WDD 231 • Site Plan</span>
+            <h1>Maison Kemet</h1>
+            <span class="subtitle">Paris × Cairo</span>
+        </div>
+    </header>
+
+    <main class="container">
+        
+        <!-- Site Name Section -->
+        <section>
+            <h2>Site Name & Vision</h2>
+            <p><strong>Name:</strong> Maison Kemet</p>
+            <p><strong>Reasoning:</strong> The name creates an immediate, highly chic juxtaposition. <span class="highlight">Maison</span> evokes the established craftsmanship of a Parisian haute couture house, while <span class="highlight">Kemet</span> (the indigenous name for ancient Egypt) references the opulent history and striking silhouettes of pharaonic royalty. It establishes a brand identity that is both architecturally modern and historically rich.</p>
+            <p><strong>Domain:</strong> maisonkemet.com</p>
+        </section>
+
+        <!-- Site Purpose Section -->
+        <section>
+            <h2>Purpose & Scope</h2>
+            <p>Maison Kemet serves as a digital couture showroom. The primary purpose is to provide an elite, minimalist interface for prospective clients to explore custom gown textiles and silhouettes. The site will utilize JavaScript to dynamically fetch and display JSON data comparing luxury fabrics (such as brocade, silk organza, and lamé), and will include an interactive form for clients to submit initial measurements and commission inquiries.</p>
+        </section>
+
+        <!-- Scenarios Section -->
+        <section>
+            <h2>User Scenarios</h2>
+            <p>To ensure usability and targeted functionality, the site will address the following client inquiries:</p>
+            <ul>
+                <li><strong>01.</strong> <em>"How does the structural integrity of metallic lamé compare to traditional silk organza for an evening gala dress?"</em><br> (Addressed via the dynamically generated JSON fabric database).</li>
+                <li><strong>02.</strong> <em>"Where can I formally submit my measurements and event details to initiate a bespoke design consultation?"</em><br> (Addressed via the clearly navigable HTML form action page).</li>
+            </ul>
+        </section>
+
+        <!-- Color Schema Section -->
+        <section>
+            <h2>Editorial Palette</h2>
+            <p>The color scheme strictly adheres to a minimalist, high-fashion aesthetic. Whitespace is heavily utilized as a design principle, while stark black and subtle greys provide structure. Gold is reserved strictly for interaction and accentuation.</p>
+            
+            <div class="palette">
+                <div class="swatch-wrap">
+                    <div class="swatch c1"></div>
+                    <div class="swatch-info">Alabaster<span>#FAF9F6 • Base</span></div>
+                </div>
+                <div class="swatch-wrap">
+                    <div class="swatch c2"></div>
+                    <div class="swatch-info">Obsidian<span>#111111 • Text/Lines</span></div>
+                </div>
+                <div class="swatch-wrap">
+                    <div class="swatch c3"></div>
+                    <div class="swatch-info">Montaigne Grey<span>#8A8B8F • Borders</span></div>
+                </div>
+                <div class="swatch-wrap">
+                    <div class="swatch c4"></div>
+                    <div class="swatch-info">Luxor Gold<span>#C5A059 • Accents</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Typography Section -->
+        <section>
+            <h2>Typography</h2>
+            <p>The typographic layout relies on high contrast between classical elegance and modern geometry, a signature of luxury editorial design.</p>
+            <ul>
+                <li><strong>Bodoni Moda (Serif):</strong> Used exclusively for `h1`, `h2`, and `h3` tags. Its dramatic thick-and-thin strokes convey immediate luxury and editorial authority.</li>
+                <li><strong>Jost (Sans-Serif):</strong> Used for all body copy, navigation, and list items. Inspired by Futura, its stark, geometric simplicity provides highly accessible, modern readability that grounds the ornate headers.</li>
+            </ul>
+        </section>
+
+        <!-- Wireframe Section -->
+        <section>
+            <h2>Structural Wireframes</h2>
+            <p>Applying the principles of alignment and repetition, these wireframes demonstrate the clean, grid-based layout for both mobile and desktop viewports.</p>
+            
+            <div class="wireframes">
+                <!-- Mobile Wireframe -->
+                <div class="wireframe-box wf-mobile">
+                    <h3>Mobile View</h3>
+                    <div class="wf-element wf-nav">☰ Logo</div>
+                    <div class="wf-element wf-hero">Editorial Image</div>
+                    <div class="wf-json-grid">
+                        <div class="wf-json-card">Fabric Data</div>
+                        <div class="wf-json-card">Fabric Data</div>
+                    </div>
+                    <div class="wf-element wf-footer">Metadata / Links</div>
+                </div>
+
+                <!-- Desktop Wireframe -->
+                <div class="wireframe-box wf-desktop">
+                    <h3>Desktop View</h3>
+                    <div class="wf-element wf-nav">Logo | Collection | Bespoke | Contact</div>
+                    <div class="wf-element wf-hero">Immersive Editorial Image & CTA</div>
+                    <div class="wf-json-grid">
+                        <div class="wf-json-card">Fabric Data</div>
+                        <div class="wf-json-card">Fabric Data</div>
+                        <div class="wf-json-card">Fabric Data</div>
+                        <div class="wf-json-card">Fabric Data</div>
+                    </div>
+                    <div class="wf-element wf-footer">Attributions | Social | Video Demo</div>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+
+    <footer>
+        &copy; 2026 Samar | WDD 231
+    </footer>
+
+</body>
+</html>
