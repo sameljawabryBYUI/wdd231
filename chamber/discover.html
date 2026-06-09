@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the culture, history, and business opportunities in Paris.">
+    <meta name="author" content="Samar Abbas">
     <title>Discover | Paris Chamber of Commerce</title>
-    <link rel="stylesheet" href="styles/small.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    
+    <meta property="og:title" content="Discover Paris Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://sameljawabrybyui.github.io/wdd231/chamber/images/chamber-logo.webp"> 
+    <meta property="og:url" content="https://sameljawabrybyui.github.io/wdd231/chamber/discover.html"> 
+    <meta property="og:description" content="Explore the rich culture, history, and business opportunities that make Paris a global hub.">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/small.css?v=3">
+    <link rel="stylesheet" href="styles/larger.css?v=3">
+    
+    <script type="module" src="scripts/discover.js" defer></script>
 </head>
 <body>
     <header>
@@ -29,13 +45,34 @@
 
     <main>
         <h1>Discover Paris</h1>
-        <section class="card">
+        
+        <div id="visit-message" class="visit-message" aria-live="polite"></div>
+
+        <section class="discover-intro">
             <p>Welcome to the Paris Chamber of Commerce discovery portal. Explore the rich culture, history, and business opportunities that make Paris a global hub for innovation and commerce.</p>
         </section>
+
+        <div id="discover-grid" class="discover-layout"></div>
     </main>
 
     <footer>
-        <p>WDD231 Class Project | Samar Abbas</p>
+        <div class="footer-info">
+            <h2>Paris Chamber of Commerce</h2>
+            <p>100 Rue de Rivoli</p>
+            <p>75001 Paris, France</p>
+            <p>info@parischamber.fr</p>
+            <p>+33 1 23 45 67 89</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.youtube.com" target="_blank" aria-label="Paris Chamber YouTube">YouTube</a> | 
+            <a href="https://www.twitter.com" target="_blank" aria-label="Paris Chamber Twitter">Twitter</a> | 
+            <a href="https://www.linkedin.com" target="_blank" aria-label="Paris Chamber LinkedIn">LinkedIn</a>
+        </div>
+        <div class="footer-legal">
+            <p>WDD231 Class Project | <span id="student-name">Samar Abbas</span></p>
+            <p>&copy; <span id="currentyear"></span> Paris Chamber of Commerce</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
     </footer>
 </body>
 </html>

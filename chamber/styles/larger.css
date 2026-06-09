@@ -1,77 +1,57 @@
 @media (min-width: 768px) {
+    .header-content { flex-direction: row; justify-content: flex-start; padding-left: 2rem; }
+    #menu-toggle { display: none; }
+    #primary-nav ul { display: flex; flex-direction: row; justify-content: flex-end; margin-top: -3rem; padding-right: 2rem; }
+    #primary-nav li { margin: 0 0.5rem; }
     
-    .header-content {
-        flex-direction: row;
-        justify-content: flex-start;
-        padding-left: 2rem;
-    }
-
-    #menu-toggle {
-        display: none;
-    }
-
-    #primary-nav ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        margin-top: -3rem; 
-        padding-right: 2rem;
-    }
+    .grid-view { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+    .list-view section { grid-template-columns: 2fr 2fr 1fr 2fr; align-items: center; gap: 1rem; }
     
-    #primary-nav li {
-        margin: 0 0.5rem;
-    }
+    footer { display: flex; justify-content: space-around; align-items: center; text-align: left; }
+    .footer-social { margin: 0; }
 
-    .grid-view {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
+    .home-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 1.5rem; }
+    .spotlights-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
 
-    .list-view section {
-        grid-template-columns: 2fr 2fr 1fr 2fr;
-        align-items: center;
-        gap: 1rem;
-    }
+    .join-main { flex-direction: row; }
+    .form-container { flex: 2; }
+    .membership-cards { flex: 1; }
+}
 
-    footer {
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        text-align: left;
-    }
-    
-    .footer-social {
-        margin: 0;
-    }
+/* ========================================= */
+/* --- W05 DISCOVER PAGE LARGER VIEWS --- */
+/* ========================================= */
 
-    /* --- Chamber Home Page Layout Extensions (Desktop Layout) --- */
-    
-    /* Elements layout: 3 columns matching desktop layout wireframe */
-    .home-grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        gap: 1.5rem;
+@media (min-width: 641px) {
+    .discover-layout {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "c1 c2"
+            "c3 c4"
+            "c5 c6"
+            "c7 c8";
     }
+}
 
-    /* Three spotlights displaying completely side-by-side */
-    .spotlights-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1.5rem;
-    }
-
-    /* ========================================= */
-    /* --- W04 JOIN PAGE (Desktop Layout) --- */
-    /* ========================================= */
-    
-    .join-main {
-        flex-direction: row; 
+@media (min-width: 1025px) {
+    .discover-layout {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "c1 c2 c3 c4"
+            "c5 c6 c7 c8";
+        gap: 2rem;
+        align-items: stretch;
     }
     
-    .form-container {
-        flex: 2; 
+    .discover-card { height: 100%; }
+
+    .discover-card img {
+        transition: transform 0.3s ease, filter 0.3s ease, box-shadow 0.3s ease;
     }
-    
-    .membership-cards {
-        flex: 1; 
+
+    .discover-card:hover img {
+        transform: scale(1.04);
+        filter: brightness(1.1);
+        box-shadow: 0 8px 16px rgba(0,0,0,0.15);
     }
 }
