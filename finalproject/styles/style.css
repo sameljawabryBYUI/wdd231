@@ -258,3 +258,4 @@ footer a {
     height: auto; 
     border: 1px solid var(--montaigne-grey);
 }
+.no-bullets { list-style: none; padding: 0; }
