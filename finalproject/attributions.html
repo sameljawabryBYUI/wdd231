@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Archive | Maison Kemet</title>
-    <meta name="description" content="Browse the Maison Kemet fabric archive.">
+    <title>Attributions | Maison Kemet</title>
+    <meta name="description" content="Resource attributions and credits for the Maison Kemet final project.">
     <meta name="author" content="Samar El Jawabry">
     
-    <meta property="og:title" content="The Archive | Maison Kemet">
-    <meta property="og:description" content="Browse the Maison Kemet fabric archive.">
+    <meta property="og:title" content="Attributions | Maison Kemet">
+    <meta property="og:description" content="Resource attributions and credits for the Maison Kemet final project.">
     <meta property="og:image" content="https://sameljawabrybyui.github.io/wdd231/finalproject/images/hero-placeholder.jpg">
-    <meta property="og:url" content="https://sameljawabrybyui.github.io/wdd231/finalproject/collection.html">
+    <meta property="og:url" content="https://sameljawabrybyui.github.io/wdd231/finalproject/attributions.html">
     
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
     
@@ -20,7 +20,7 @@
     
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/larger.css">
-    <script type="module" src="scripts/collection.js"></script>
+    <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
     <header>
@@ -29,7 +29,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="collection.html" class="active">Collection</a></li>
+                <li><a href="collection.html">Collection</a></li>
                 <li><a href="bespoke.html">Bespoke Inquiry</a></li>
             </ul>
         </nav>
@@ -37,23 +37,28 @@
 
     <main>
         <div class="hero">
-            <h1>The Textile Archive</h1>
-            <button id="filter-heavy" class="mt-2">Show Only Heavy Drapes</button>
+            <h1>Resource Attributions</h1>
+            <p>Credits and references for assets used in this project.</p>
         </div>
         
-        <div id="fabric-grid" class="fabric-grid"></div>
-
-        <dialog id="fabric-modal">
-            <h2 id="modal-title">Fabric Name</h2>
-            <p id="modal-details">Fabric description goes here.</p>
-            <button id="close-modal">Close Archive</button>
-        </dialog>
+        <section class="text-center">
+            <h2>Images</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>Hero Image: Sourced from Pexels.</li>
+                <li>Favicon: AI-Generated via ChatGPT.</li>
+            </ul>
+            
+            <h2 class="mt-2">Typography</h2>
+            <ul style="list-style: none; padding: 0;">
+                <li>Fonts: Bodoni Moda and Jost, provided by Google Fonts.</li>
+            </ul>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Maison Kemet | Samar El Jawabry | WDD 231</p>
         <p>
-            <a href="attributions.html">Attributions</a> | 
+            <a href="attributions.html" class="active">Attributions</a> | 
             <a href="YOUR-VIDEO-LINK-HERE" target="_blank">Video Demonstration</a>
         </p>
     </footer>

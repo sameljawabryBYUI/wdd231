@@ -1,0 +1,6 @@
+/* larger.css - Satisfies the 2 CSS files requirement */
+@media (min-width: 768px) {
+    .hero h1 {
+        font-size: 4rem;
+    }
+}

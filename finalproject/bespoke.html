@@ -1,22 +1,31 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bespoke Consultation | Maison Kemet</title>
     <meta name="description" content="Request a bespoke couture consultation with Maison Kemet.">
-    <meta name="author" content="Samar">
+    <meta name="author" content="Samar El Jawabry">
+    
+    <meta property="og:title" content="Bespoke Consultation | Maison Kemet">
+    <meta property="og:description" content="Request a bespoke couture consultation with Maison Kemet.">
+    <meta property="og:image" content="https://sameljawabrybyui.github.io/wdd231/finalproject/images/hero-placeholder.jpg">
+    <meta property="og:url" content="https://sameljawabrybyui.github.io/wdd231/finalproject/bespoke.html">
+    
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="module" src="js/main.js"></script>
+    
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script type="module" src="scripts/main.js"></script>
 </head>
 <body>
     <header>
         <a href="index.html" class="logo">Maison Kemet</a>
-        <button id="menu-btn" aria-label="Toggle navigation">☰</button>
+        <button id="menu-btn" aria-label="Toggle navigation" aria-expanded="false">☰</button>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -28,7 +37,7 @@
 
     <main>
         <div class="hero">
-            <h2>Commission a Garment</h2>
+            <h1>Commission a Garment</h1>
             <p>Submit your initial event details to begin the design process.</p>
         </div>
 
@@ -47,7 +56,7 @@
                 <option value="velvet">Cotton Velvet</option>
             </select>
 
-            <label for="details">Silhoutte Notes & Measurements:</label>
+            <label for="details">Silhouette Notes & Measurements:</label>
             <textarea id="details" name="details" rows="4" required></textarea>
 
             <button type="submit">Submit Inquiry</button>
@@ -55,10 +64,10 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 Maison Kemet | Samar | WDD 231</p>
+        <p>&copy; 2026 Maison Kemet | Samar El Jawabry | WDD 231</p>
         <p>
             <a href="attributions.html">Attributions</a> | 
-            <a href="https://youtube.com/your-video-link" target="_blank">Video Demonstration</a>
+            <a href="YOUR-VIDEO-LINK-HERE" target="_blank">Video Demonstration</a>
         </p>
     </footer>
 </body>
