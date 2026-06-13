@@ -1,8 +1,6 @@
 // collection.js - Handles external data and DOM manipulation for the Collection page
 import { initMenu } from './main.js';
 
-initMenu();
-
 const grid = document.querySelector('#fabric-grid');
 const modal = document.querySelector('#fabric-modal');
 const modalTitle = document.querySelector('#modal-title');
@@ -21,12 +19,15 @@ async function fetchFabrics() {
         fabricData = await response.json();
         displayFabrics(fabricData);
     } catch (error) {
-        grid.innerHTML = `<p style="color:red">Error loading collection: ${error.message}</p>`;
+        if (grid) {
+            grid.innerHTML = `<p style="color:red">Error loading collection: ${error.message}</p>`;
+        }
     }
 }
 
 // Dynamic Content Generation & Template Literals
 function displayFabrics(fabrics) {
+    if (!grid) return;
     grid.innerHTML = ''; 
     
     fabrics.forEach(fabric => {
@@ -65,7 +66,7 @@ if (filterBtn) {
 function openModal(id) {
     // Array Method: Find
     const fabric = fabricData.find(f => f.id === id);
-    if (fabric) {
+    if (fabric && modal && modalTitle && modalDetails) {
         modalTitle.textContent = fabric.name;
         modalDetails.innerHTML = `This exquisite ${fabric.weave} is sourced directly from ${fabric.origin}. Known for its ${fabric.weight.toLowerCase()} drape, it is ideal for structural silhouettes.`;
         modal.showModal();
@@ -79,4 +80,6 @@ if (closeModal) {
 }
 
 // Initialize Fetch
-fetchFabrics();
+if (grid) {
+    fetchFabrics();
+}

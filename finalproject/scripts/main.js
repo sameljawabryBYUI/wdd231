@@ -32,8 +32,6 @@ export function initLocalStorage() {
     localStorage.setItem('kemet-visits-ls', numVisits);
 }
 
-// Initialize on DOM Load
-document.addEventListener('DOMContentLoaded', () => {
-    initMenu();
-    initLocalStorage();
-});
+// Run functions directly (Modules naturally wait for the DOM to load!)
+initMenu();
+initLocalStorage();
