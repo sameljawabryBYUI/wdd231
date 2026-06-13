@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Archive | Maison Kemet</title>
+    <meta name="description" content="Browse the Maison Kemet fabric archive.">
+    <meta name="author" content="Samar">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script type="module" src="js/collection.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Maison Kemet</a>
+        <button id="menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html" class="active">Collection</a></li>
+                <li><a href="bespoke.html">Bespoke Inquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>The Textile Archive</h2>
+            <button id="filter-heavy" style="padding: 0.5rem 1rem; cursor:pointer;">Show Only Heavy Drapes</button>
+        </div>
+        
+        <div id="fabric-grid" class="fabric-grid"></div>
+
+        <dialog id="fabric-modal">
+            <h2 id="modal-title">Fabric Name</h2>
+            <p id="modal-details">Fabric description goes here.</p>
+            <button id="close-modal">Close Archive</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Maison Kemet | Samar | WDD 231</p>
+        <p>
+            <a href="attributions.html">Attributions</a> | 
+            <a href="https://youtube.com/your-video-link" target="_blank">Video Demonstration</a>
+        </p>
+    </footer>
+</body>
+</html>

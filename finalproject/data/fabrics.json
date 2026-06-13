@@ -1,0 +1,17 @@
+[
+  { "id": "mk-01", "name": "Midnight Brocade", "weave": "Silk Brocade", "origin": "Lyon, France", "weight": "Heavy" },
+  { "id": "mk-02", "name": "Nile Lotus Organza", "weave": "Silk Organza", "origin": "Cairo, Egypt", "weight": "Light" },
+  { "id": "mk-03", "name": "Pharaoh's Lamé", "weave": "Metallic Lamé", "origin": "Milan, Italy", "weight": "Medium" },
+  { "id": "mk-04", "name": "Desert Wind Chiffon", "weave": "Silk Chiffon", "origin": "Paris, France", "weight": "Light" },
+  { "id": "mk-05", "name": "Obsidian Velvet", "weave": "Cotton Velvet", "origin": "Florence, Italy", "weight": "Heavy" },
+  { "id": "mk-06", "name": "Alabaster Tulle", "weave": "Fine Tulle", "origin": "Paris, France", "weight": "Light" },
+  { "id": "mk-07", "name": "Karnak Jacquard", "weave": "Cotton Jacquard", "origin": "Cairo, Egypt", "weight": "Medium" },
+  { "id": "mk-08", "name": "Luxor Gold Charmeuse", "weave": "Silk Charmeuse", "origin": "Lyon, France", "weight": "Light" },
+  { "id": "mk-09", "name": "Dune Crepe", "weave": "Crepe de Chine", "origin": "Como, Italy", "weight": "Medium" },
+  { "id": "mk-10", "name": "Giza Cotton Lawn", "weave": "Egyptian Cotton", "origin": "Giza, Egypt", "weight": "Light" },
+  { "id": "mk-11", "name": "Empire Taffeta", "weave": "Silk Taffeta", "origin": "Lyon, France", "weight": "Medium" },
+  { "id": "mk-12", "name": "Cleopatra Bouclé", "weave": "Wool Bouclé", "origin": "Paris, France", "weight": "Heavy" },
+  { "id": "mk-13", "name": "Oasis Georgette", "weave": "Silk Georgette", "origin": "Como, Italy", "weight": "Light" },
+  { "id": "mk-14", "name": "Ptolemaic Satin", "weave": "Duchess Satin", "origin": "Milan, Italy", "weight": "Heavy" },
+  { "id": "mk-15", "name": "Valley Linen", "weave": "Pure Linen", "origin": "Alexandria, Egypt", "weight": "Medium" }
+]

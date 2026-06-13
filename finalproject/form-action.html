@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inquiry Received | Maison Kemet</title>
+    <meta name="description" content="Form action output page.">
+    <meta name="author" content="Samar">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body style="text-align: center; padding-top: 5rem;">
+    
+    <h2>Dossier Received</h2>
+    <div id="form-results" style="margin: 2rem auto; max-width: 500px; text-align: left; background: #fff; padding: 2rem; border: 1px solid var(--montaigne-grey);">
+        </div>
+    
+    <a href="index.html" style="color: var(--luxor-gold); text-transform: uppercase;">Return to Maison</a>
+
+    <script>
+        // Use URLSearchParams to read the GET data from the form
+        const urlParams = new URLSearchParams(window.location.search);
+        const resultsDiv = document.getElementById('form-results');
+        
+        if(urlParams.has('name')) {
+            resultsDiv.innerHTML = `
+                <p><strong>Client:</strong> ${urlParams.get('name')}</p>
+                <p><strong>Event Date:</strong> ${urlParams.get('date')}</p>
+                <p><strong>Fabric Request:</strong> ${urlParams.get('fabric')}</p>
+                <p><strong>Notes:</strong> ${urlParams.get('details')}</p>
+            `;
+        } else {
+            resultsDiv.innerHTML = "<p>No data submitted.</p>";
+        }
+    </script>
+</body>
+</html>

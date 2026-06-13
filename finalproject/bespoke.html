@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bespoke Consultation | Maison Kemet</title>
+    <meta name="description" content="Request a bespoke couture consultation with Maison Kemet.">
+    <meta name="author" content="Samar">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">Maison Kemet</a>
+        <button id="menu-btn" aria-label="Toggle navigation">☰</button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="collection.html">Collection</a></li>
+                <li><a href="bespoke.html" class="active">Bespoke Inquiry</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <h2>Commission a Garment</h2>
+            <p>Submit your initial event details to begin the design process.</p>
+        </div>
+
+        <form action="form-action.html" method="GET">
+            <label for="client-name">Full Name:</label>
+            <input type="text" id="client-name" name="name" required>
+
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="date" required>
+
+            <label for="fabric-pref">Primary Fabric Interest:</label>
+            <select id="fabric-pref" name="fabric">
+                <option value="brocade">Silk Brocade</option>
+                <option value="organza">Silk Organza</option>
+                <option value="lame">Metallic Lamé</option>
+                <option value="velvet">Cotton Velvet</option>
+            </select>
+
+            <label for="details">Silhoutte Notes & Measurements:</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+
+            <button type="submit">Submit Inquiry</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Maison Kemet | Samar | WDD 231</p>
+        <p>
+            <a href="attributions.html">Attributions</a> | 
+            <a href="https://youtube.com/your-video-link" target="_blank">Video Demonstration</a>
+        </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+/* ==========================================
+   CSS VARIABLES (From Proposal)
+   ========================================== */
+:root {
+    --alabaster: #FAF9F6;      
+    --obsidian: #111111;       
+    --montaigne-grey: #595A5E; 
+    --luxor-gold: #8B6D28;     
+    --font-editorial: 'Bodoni Moda', serif;
+    --font-modern: 'Jost', sans-serif;
+}
+
+/* ==========================================
+   RESET & BASE
+   ========================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-modern);
+    background-color: var(--alabaster);
+    color: var(--obsidian);
+    line-height: 1.7;
+    font-weight: 300;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+h1, h2, h3 {
+    font-family: var(--font-editorial);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/* ==========================================
+   HEADER & RESPONSIVE NAVIGATION
+   ========================================== */
+header {
+    background-color: var(--alabaster);
+    border-bottom: 1px solid var(--montaigne-grey);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-family: var(--font-editorial);
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--obsidian);
+}
+
+#menu-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: var(--obsidian);
+}
+
+nav {
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: none; /* Hidden on mobile by default */
+    flex-direction: column;
+    text-align: center;
+}
+
+nav ul.open {
+    display: flex; /* Shown when hamburger clicked */
+}
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    text-decoration: none;
+    color: var(--obsidian);
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: var(--luxor-gold);
+}
+
+/* ==========================================
+   MAIN LAYOUT & COMPONENTS
+   ========================================== */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    min-height: 70vh;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.hero h1 {
+    font-size: clamp(2rem, 5vw, 4rem);
+    letter-spacing: 0.1em;
+}
+
+.hero p {
+    color: var(--montaigne-grey);
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+}
+
+/* Grid for JSON Data */
+.fabric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.fabric-card {
+    border: 1px solid var(--montaigne-grey);
+    padding: 1.5rem;
+    text-align: center;
+    background: #fff;
+    transition: transform 0.3s ease;
+}
+
+.fabric-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--luxor-gold);
+}
+
+.fabric-card button {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--obsidian);
+    color: var(--alabaster);
+    border: none;
+    cursor: pointer;
+    font-family: var(--font-modern);
+    text-transform: uppercase;
+}
+
+/* Modal Dialog */
+dialog {
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid var(--luxor-gold);
+    background: var(--alabaster);
+    max-width: 500px;
+    text-align: center;
+}
+
+dialog::backdrop {
+    background: rgba(17, 17, 17, 0.8);
+}
+
+#close-modal {
+    margin-top: 1.5rem;
+    background: var(--montaigne-grey);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.8rem;
+    font-family: var(--font-modern);
+    border: 1px solid var(--montaigne-grey);
+    background: #fff;
+}
+
+button[type="submit"] {
+    background-color: var(--luxor-gold);
+    color: #fff;
+    padding: 1rem;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid var(--montaigne-grey);
+    font-size: 0.9rem;
+    letter-spacing: 0.1em;
+}
+
+footer a {
+    color: var(--luxor-gold);
+    text-decoration: none;
+    margin: 0 0.5rem;
+}
+
+/* ==========================================
+   DESKTOP MEDIA QUERY
+   ========================================== */
+@media (min-width: 768px) {
+    #menu-btn {
+        display: none; /* Hide hamburger */
+    }
+    
+    nav {
+        width: auto;
+    }
+
+    nav ul {
+        display: flex; /* Always show links */
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    
+    nav ul li a {
+        padding: 0;
+    }
+}
